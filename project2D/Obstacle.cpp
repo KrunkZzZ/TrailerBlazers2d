@@ -25,9 +25,9 @@ void Obstacle::Update(float dt)
 void Obstacle::SetPosition(const glm::vec3& pos)
 {
 	m_position = pos;
-	m_v2TopLeft.x = (pos.x + 10);
+	m_v2TopLeft.x = (pos.x - 10);
 	m_v2TopLeft.y = (pos.y + 10);
-	m_v2BtmRight.x = (pos.x - 10);
+	m_v2BtmRight.x = (pos.x + 10);
 	m_v2BtmRight.y = (pos.y - 10);
 }
 
